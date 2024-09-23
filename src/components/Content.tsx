@@ -1,12 +1,13 @@
 import React, { Suspense, useMemo } from "react";
 import useDataFetch from "../hooks/useDataFetch";
 import { useOutletContext } from "react-router-dom";
-
+interface SearchContext {
+  search: string;
+}
 const Recipe = React.lazy(() => import("./Recipe"));
 const Content = () => {
   const { data } = useDataFetch();
-
-  const { search } = useOutletContext<any>();
+  const { search } = useOutletContext<SearchContext>();
 
   const filterData = useMemo(() => {
     if (!search) {
