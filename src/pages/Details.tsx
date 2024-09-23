@@ -5,7 +5,7 @@ import { CgCheck } from "react-icons/cg";
 const Details = () => {
   const { id } = useParams();
   const { data } = useDataFetch();
-  const pizza = data.find((pizza) => pizza.id === parseInt(id));
+  const pizza = data.find((pizza) => pizza.id === parseInt(id || "0"));
   console.log(pizza);
   return (
     <div className="details">
