@@ -1,5 +1,5 @@
 # React + TypeScript + Vite
-
+This project is a React and TypeScript implementation that fetches recipes from the DummyJSON API.Each recipe can be clicked to view detailed information on a separate page, which includes the same header. The app uses lazy loading for heavy components and follows modular code structure with TypeScript interfaces for props and state.
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
